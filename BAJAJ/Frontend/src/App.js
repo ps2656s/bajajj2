@@ -31,7 +31,7 @@ function App() {
       }
 
       // Call the backend API
-      const response = await axios.post('http://localhost:3000/bfhl', parsedData);
+      const response = await axios.post('https://bajajj2.onrender.com/bfhl', parsedData);
       setResponseData(response.data);
       setErrorMessage('');
     } catch (error) {
